@@ -1,0 +1,42 @@
+
+@media screen and (max-width:1350px) {
+  .container {
+    width: 1260px;
+  }
+}
+
+@media screen and (max-width:1260px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@media screen and (max-width:1170px) {
+  .container {
+    width: 1080px;
+  }
+}
+
+@media screen and (max-width:1080px) {
+  .container {
+    width: 990px;
+  }
+}
+
+@media screen and(width:990px) {
+  .container {
+    width: 900px;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .container {
+    width: 810px;
+  }
+}
+
+@media screen and (max-width:810px) {
+  .container {
+    width: 730px;
+  }
+}
