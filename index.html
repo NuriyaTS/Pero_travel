@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="media.css">
   <link rel="icon" href="/img/logo.png">
   <title>Pero-Travel</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
 </head>
 <body>
   <header class="firstPage">
@@ -19,7 +19,7 @@
           <li><a href="#">Экскурсии</a></li>
           <li><a href="#">Личный кабинет</a></li>
       </div>
-      <div class="burger"></div>
+      <div onclick="showBurger()" class="burger"></div>
       <section class="headerTop">
         <div class="container">
           <div class="headerInfo">
@@ -122,7 +122,8 @@
         <div class="container">
             <div class="bacgroundImg">
                 <img src="/img/Rectangle5.png" alt="#">
-            </div>
+                <img class="forMedia" src="/img/backgroundmedia.png" alt="#">
+              </div>
         <div class="block">
                 <h3>О нас</h3>
                 <p>PeroTravel - Первый онлайн-сервис по бронированию экскурсий без очередей и операторов.</p>
@@ -191,7 +192,7 @@
                   </div>
                 </div>
               </div>
-                <img src="/img/waterfall.png" alt="5">
+                <img class="waterFallimg" src="/img/waterfall.png" alt="5">
                 <div class="rightGall">
                   <div class="subRight">
                     <img src="/img/jeepride.png" alt="6">
@@ -255,22 +256,55 @@
               </div>
           </div>
     </section>
+
     <section class="lableForm">
       <div class="container">
         <div class="form">
           <h6>Остались вопросы?</h6>
           <span>Оставь заявку и мы ответим</span>
-        <label for="name" class="label">Имя</label>
-        <input type="text" id="name" placeholder="Name" class="filed" required>
-        <label for="phone" class="label">Телефон</label>
-        <input type="text" id="phone" placeholder="Phone" class="filed" required>
-        <label for="email" class="label">Почта</label>
-        <input type="text" id="email" placeholder="Email" class="filed" required>
+          <div class="inerForm">
+            <input type="text" id="name" placeholder="Имя" class="filed" required>
+            <input type="text" id="phone" placeholder="Телефон" class="filed" required>
+            <input type="text" id="email" placeholder="Почта" class="filed" required>
         </div>
+          <button class="btn"><a href="#">Оставить заявку</a></button>
+      </div>
       </div>
     </section>
-
   </main>
+
+  <footer>
+    <div class="container">
+      <div class="inerFooter">
+      <div class="box">
+        <a href="#">Главная</a>
+        <a href="#">Экскурсии</a>
+        <a href="#">Личный кабинет</a>
+      </div>
+      <div class="boxsprite">
+        <div class="contactsSprite">
+          <a href="#" class="iconContact wh"></a>
+          <a href="#" class="iconContact tg"></a>
+          <a href="#" class="iconContact tgBot"></a>
+        </div>
+        <div class="box">
+        <a href="#">+7 964 944 18 74</a>
+        <a href="#">+7 918 919 98 28</a>
+        <a href="#">Телеграм-бот PeroTravel</a>
+        </div>
+      </div>
+      <div class="box boxbot">
+        <a href="">office@perotravel.ru</a>
+        <div class="footerSprite">
+          <a href="#" class="iconColored vk"></a>
+          <a href="#" class="iconColored inst"></a>
+          <a href="#" class="iconColored fb"></a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js.js"></script>
 </body>

@@ -31,11 +31,13 @@ h3{
   font-weight: 700;
   font-size: 24px;
 }
+
 /* header */
 .firstPage {
   background: url(/img/bacground.jpg) center/cover no-repeat;
   height: 789px;
   padding-top: 26px;
+  position: relative;
 }
 .headerLogo {
   display: flex;
@@ -138,18 +140,19 @@ h3{
   background-position: -5px -74px;
 }
 .videoSlide{
-  position: relative;
+  position: absolute;
   padding-top: 263px;
   border-radius: 10px;
+  z-index: 10;
+  top: 50%;
+  right: 150px;
 }
 .vid {
   width: 360px;
   height: 220px;
   position: absolute;
-  left: 70%;
-  top: 90%;
-  margin-left: -150px;
-  margin-top: -150px;
+  z-index: 10;
+  right: 0;
 }
 .swiper-slide {
    background-position: center;
@@ -158,7 +161,6 @@ h3{
 }
  video{
   width: 360px;
-  height: 227px;
   border-radius: 10px;
 }
 /* excortions */
@@ -181,6 +183,9 @@ h3{
   width: 360px;
   height: 497px;
   border-radius: 10px;
+}
+.swiper-wrapper{
+  padding-bottom: 50px;
 }
 .text{
   position: absolute;
@@ -244,6 +249,9 @@ position: absolute;
 top: 233px;
 left: 0;
 }
+ .bacgroundImg .forMedia {
+   display: none;
+ }
 .block{
   position: absolute;
   width: 542px;
@@ -417,16 +425,93 @@ left: 0;
   height: 640px;
   background: #04040450;
   backdrop-filter: blur(5px);
-  border: red solid 1px;
   position: absolute;
   right: 160px;
+}
+.inerForm{
   display: flex;
   flex-direction: column;
-  row-gap: ;
   align-items: center;
   justify-content: center;
+  padding: 0 0 83px;
 }
-.filed{
+input{
+  width: 360px;
   background: none;
-  border: none;
+  border-top:none ;
+  border-left: none;
+  border-right: none;
+  padding: 45px 0 0;
+}
+.form h6{
+  font-size: 24px;
+  color: #fff;
+  padding: 132px 0 0 95px;
+}
+.form span{
+  color: #ffc700;
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 96px;
+}
+.form .btn{
+  margin-left: 95px;
+}
+/* footer */
+footer{
+  position: relative;
+}
+.inerFooter{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 53px;
+  position: relative;
+}
+.inerFooter::before{
+  content: '';
+  position: absolute;
+  background: url(/img/logo_colored.png);
+  width: 80px;
+  height: 114px;
+  top: 30px;
+  left: 0;
+}
+.box{
+  display: flex;
+  flex-direction: column;
+}
+.box a{
+  color: #000;
+}
+.boxsprite{
+  display: flex;
+  column-gap: 5px;
+}
+.iconContact{
+  background: url('/img/WTgramm.png') center/cover no-repeat;
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+.contactsSprite .wh{
+  background-position: 0 0;
+}
+.footerSprite{
+  text-align: left;
+  padding-top: 15px;
+}
+.iconColored{
+    background: url('/img/socialColored.png') center/cover no-repeat;
+    width: 38px;
+    height: 38px;
+    display: inline-block;
+}
+.footerSprite .vk{
+  background-position: 0;
+}
+.footerSprite .inst{
+  background-position: -38px;
+}
+.footerSprite .fb {
+  background-position: -78px;
 }
