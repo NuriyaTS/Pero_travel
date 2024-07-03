@@ -1,0 +1,213 @@
+@media (max-width: 1399px) {
+    .container {
+      max-width: 768px;
+    }
+    header ul {
+      display: none;
+    }
+    header ul.active {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      row-gap: 15px;
+      width: 300px;
+      height: 200px;
+      background: #04040450;
+      backdrop-filter: blur(5px);
+      position: absolute;
+      z-index: 1000;
+      right: 40px;
+      top: 38px;
+      padding-top: 8px;
+      border-radius: 10px;
+    }
+    .burger {
+      width: 40px;
+      height: 4px;
+      background-color: white;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      right: 20px;
+    }
+    .burger::before {
+      content: "";
+      width: 40px;
+      height: 4px;
+      background-color: white;
+      position: absolute;
+      top: -9px;
+    }
+    .burger::after {
+      content: "";
+      width: 40px;
+      height: 4px;
+      background-color: white;
+      position: absolute;
+      top: 9px;
+    }
+    .burger.active {
+      background: none;
+    }
+  
+    .burger.active::after {
+      transform: rotate(45deg);
+      top: 0;
+      transition: 1s;
+    }
+    .burger.active::before {
+      transform: rotate(-45deg);
+      top: 0;
+      transition: 1s;
+    }
+    .about {
+      display: flex;
+    }
+    .about__content {
+      display: block;
+    }
+    .about__text {
+      max-width: 610px;
+    }
+    .month__content {
+      position: relative;
+    }
+    .month__bg {
+      max-width: 479px;
+      height: 877px;
+      position: absolute;
+      top: 0;
+      left: -100px;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+    }
+    .month__gelly {
+      position: relative;
+    }
+    .month__img {
+      position: absolute;
+      top: 258px;
+      bottom: 0;
+      left: -410px;
+      right: 0;
+    }
+    .route {
+      margin-top: 750px;
+    }
+    .route__content {
+      display: block;
+    }
+    .route__info p {
+      max-width: 572px;
+    }
+    .route__bottom {
+      display: flex;
+      max-width: 90%;
+      margin-top: 81px;
+    }
+    .cash__cards {
+      display: inline;
+    }
+    .cash__gym {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 56px;
+    }
+    .cash__two {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 56px;
+      margin-top: 50px;
+    }
+    .pass {
+      display: none;
+    }
+    .galery__left {
+      display: none;
+    }
+    .booking__img {
+      width: 30%;
+    }
+    .booking__form {
+      max-width: 315px;
+    }
+    .booking__form-wrapper {
+      width: 70%;
+    }
+    .booking__like {
+      display: flex;
+      column-gap: 10px;
+    }
+  }
+  @media (max-width: 767px) {
+    .container {
+      max-width: 425px;
+    }
+    .about__cards {
+      display: block;
+      /* align-items: center; */
+    }
+    .about__card {
+      max-width: 160px;
+      display: flex;
+      align-items: center;
+    }
+    .about__card2 {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+    }
+    .about__adap {
+      display: flex;
+      justify-content: center;
+      column-gap: 30px;
+    }
+    .month__img {
+      max-width: 420px;
+    }
+    .route__bottom {
+      max-width: 100%;
+    }
+    .route__bottom img {
+      max-width: 280px;
+    }
+    .galery__top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: 100px;
+    }
+    .galery__right-bot {
+      display: block;
+    }
+    .galery__img {
+      max-width: 180px;
+    }
+    .galery__image {
+      display: none;
+    }
+    .footer__content {
+      display: block;
+      text-align: center;
+    }
+    .footer__left {
+      display: block;
+      text-align: center;
+    }
+    .footer__right {
+      display: block;
+      text-align: center;
+    }
+    .footer__nav {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+    .footer__web {
+      text-align: center;
+    }
+  }

@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Экскурссии</title>
+   
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./secondPageStyle.css" />
+    <link rel="stylesheet" href="./">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <img src="../secondPage/imgs/logo.svg" alt="logo" />
+    
+            <ul>
+            <li class="header__link"> Главная </li>
+            <li class="header__link"> <span>Экскурсии</span> </li>
+            <li onclick="popupToggle()" class="header__link">Личный Кабинет</li>
+        </ul>
+        <div onclick="showBurger()" class="burger"></div>
+    </div>
+</div>
+           
+     
+        
+      
+      <section class="hero">
+        <div class="container">
+          <div class="hero__content">
+            <h2 class="hero__top">Автобусный тур</h2>
+            <h1 class="hero__title">ЗОЛОТОЕ КОЛЬЦО АБХАЗИИ(ИЗ АДЛЕРА)</h1>
+          </div>
+          <div class="hero__like">
+            <button class="hero__btn">
+              К другим экскурсиям<img src="../secondPage/imgs/strela.svg" alt="Arrow" />
+            </button>
+            <img src="../secondPage/imgs/like.svg" alt="" />
+          </div>
+        </div>
+        
+      </section>
+
+      <div class="popup">
+        <h2 class="popup__top">Личный Кабинет</h2>
+        <form class="popup__form">
+          <div class="popup__card">
+            <input type="text" placeholder="ФИО"  class="popup__put"/>
+            <input type="email" placeholder="Email" class="popup__put"/>
+            <input type="number" placeholder="Номер телефона" class="popup__put" />
+            <input type="password" placeholder="Создайте пароль" class="popup__put" />
+          </div>
+          <button class="popup__btn">Зарегистрироваться</button>
+          <h2 onclick="popupToggle()" class="popup__close">X</h2>
+        </form>
+      </div>
+  
+    </header>
+    <main>
+      <section class="about">
+        <div class="container">
+          <div class="about__content">
+            <div class="about__title">
+              <h2 class="about__sub-title">Описание экскурсии</h2>
+              <p class="about__text">
+                Вас ждет путешествие по "Золотому Кольцу Абхазии" на Мерседес
+                Спринтер (20 мест). По маршруту вас будет сопровождать
+                профессиональный гид. Посадка на экскурсию осуществляется с
+                вашего отеля или ближайшей автобусной остановки. Пересечение
+                границы без пересадок.
+              </p>
+            </div>
+            <div class="about__cards">
+                <div class="about__adap">
+              <div class="about__card">
+                <img src="../secondPage/imgs/solnse.svg" alt="sun" class="about__sun" />
+                <div class="about__card-wrap">
+                  <img src="../secondPage/imgs/money.svg" alt="" />
+                  <h3 class="about__cost">1 618 ₽</h3>
+                </div>
+                <p class="about__info">Взрослый билет</p>
+              </div>
+              <div class="about__card">
+                <img src="../secondPage/imgs/solnse.svg" alt="sun" class="about__sun" />
+                <div class="about__card-wrap">
+                  <img src="../secondPage/imgs/money.svg" alt="" />
+                  <h3 class="about__cost">1 412 ₽</h3>
+                </div>
+                <p class="about__info">Детский билет</p>
+              </div>
+            </div>
+            <div class="about__card2">
+              <div class="about__card">
+                <img src="../secondPage/imgs/solnse.svg" alt="sun" class="about__sun" />
+                <div class="about__card-wrap">
+                  <img src="../secondPage/imgs/money.svg" alt="" />
+                  <h3 class="about__cost">12 часов</h3>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="month">
+        <div class="container">
+          <div class="month__content">
+            <img src="../secondPage/imgs/gora.jpg" alt="gora" class="month__bg" />
+            <div class="month__hhh"><h2>Календарь путешествий</h2></div>
+            <div class="month__gelly">
+              <img src="../secondPage/imgs/november.png" alt="november" class="month__img"/>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="route">
+        <div class="container">
+          <div class="route__content">
+            <div class="route__description">
+              <h2>Описание маршрута</h2>
+              <div class="route__info">
+                <img src="../secondPage/imgs/list.svg" alt="" />
+                <p>
+                  Город Гагра, Колоннада, ресторан "Гагрипш", Парк принца
+                  Ольденбурского;
+                </p>
+              </div>
+              <div class="route__info">
+                <img src="../secondPage/imgs/list.svg" alt="" />
+                <p>
+                  Смотровая площадка "Прощай Родина", "Чабгарский" карниз,
+                  Подвесной мост через реку "Бзыбь";
+                </p>
+              </div>
+              <div class="route__info">
+                <img src="../secondPage/imgs/list.svg" alt="" />
+                <p>
+                  Дегустация сыра, меда, вина, чачи (входит в стоимость
+                  экскурсии), Голубое Озеро, Юпшарский каньон ("Каменный
+                  мешок"), Озеро "Рица", Водопады "Девичьи и мужские слезы".
+                </p>
+              </div>
+              <h4>Далее на выбор:</h4>
+              <div class="route__info">
+                <img src="../secondPage/imgs/list.svg" alt="" />
+                <p>
+                  Монастырь "Новый Афон", Новоафонская Пещера, "Рукотворный"
+                  водопад, храм "Симона Кананита", Лебединое озеро.
+                </p>
+              </div>
+              <div class="route__info">
+                <img src="../secondPage/imgs/list.svg" alt="" />
+                <p>Термальный источник в с. Приморское.</p>
+              </div>
+            </div>
+            <div class="route__bottom">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="../secondPage/imgs/gagra.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../secondPage/imgs/most.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../secondPage/imgs/vodovod.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../secondPage/imgs/gagra.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../secondPage/imgs/most.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../secondPage/imgs/vodovod.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cash">
+        <div class="container">
+          <div class="cash__content">
+            <h2>Дополнительные расходы (по желанию)</h2>
+            <div class="cash__cards">
+                <div class="cash__gym">
+              <div class="cash__card">
+                <img src="../secondPage/imgs/solnse.svg" alt="sun" class="cash__sun" />
+                <div class="cash__card-wrap">
+                  <img src="../secondPage/imgs/money.svg" alt="" />
+                  <h3 class="cash__cost">200 ₽</h3>
+                </div>
+                <p class="cash__info">Дача Сталина</p>
+              </div>
+              <div class="cash__card">
+                <img src="../secondPage/imgs/solnse.svg" alt="sun" class="cash__sun" />
+                <div class="cash__card-wrap">
+                  <img src="../secondPage/imgs/money.svg" alt="" />
+                  <h3 class="cash__cost">200 ₽</h3>
+                </div>
+                <p class="cash__info">Молочный водопад</p>
+              </div>
+              <div class="cash__card">
+                <img src="../secondPage/imgs/solnse.svg" alt="sun" class="cash__sun" />
+                <div class="cash__card-wrap">
+                  <img src="../secondPage/imgs/money.svg" alt="" />
+                  <h3 class="cash__cost">500 ₽</h3>
+                </div>
+                <p class="cash__info">Новоафинская пещера</p>
+              </div>
+            </div>
+            <div class="cash__two">
+              <div class="cash__card">
+                <img src="../secondPage/imgs/solnse.svg" alt="sun" class="cash__sun" />
+                <div class="cash__card-wrap">
+                  <img src="../secondPage/imgs/money.svg" alt="" />
+                  <h3 class="cash__cost">500 ₽</h3>
+                </div>
+                <p class="cash__info">Термальный источник</p>
+              </div>
+              <div class="cash__card">
+                <img src="../secondPage/imgs/solnse.svg" alt="sun" class="cash__sun" />
+                <div class="cash__card-wrap">
+                  <h3 class="cash__cost">Обед</h3>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pass">
+        <div class="container">
+          <div class="pass__top">
+            <h2>Важная информация</h2>
+          </div>
+          <div class="pass__content">
+            <div class="pass__info">
+              <p class="pass__russia">
+                При пересечении границы (Россия-Абхазия) при себе иметь:
+              </p>
+              <div class="pass__img">
+                <img src="../secondPage/imgs/pasport.svg" alt="pasport" />
+                <h3>Паспорт гражданина РФ</h3>
+              </div>
+              <div class="pass__img">
+                <img src="../secondPage/imgs/pasport.svg" alt="pasport" />
+                <div class="pass__word">
+                  <h3>Гражданам до 14 лет свидетельство о рождении</h3>
+                  <p>
+                    Несовершеннолетние дети пересекают границу в сопровождении
+                    родителей, в сопровождении законного представителя
+                    (нотариально заверенная доверенность с указанием страны
+                    вывоза ребенка).
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="pass__text">
+              <div class="pass__rus">
+                <p>
+                  Иностранным гражданам въезд в Абхазию <span>ограничен</span>,
+                  кроме граждан Украины, республик ДНР и ЛНР.
+                </p>
+                <img src="../secondPage/imgs/znak.svg" alt="znak" />
+              </div>
+              <div class="pass__rus">
+                <p>
+                  При возвращении из Абхазии в Россию сдавать ПЦР-тест не нужно,
+                  на карантин помещать не будут (Постановление Правительства РФ
+                  1996-Р от 01.08.2020).
+                </p>
+                <img src="../secondPage/imgs/znak.svg" alt="znak" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="galery">
+        <div class="container">
+          <div class="galery__top">
+            <h2 class="galery__title">Галерея Тура</h2>
+            <a class="galery__link" href="#"> Смотреть все </a>
+          </div>
+        </div>
+        <div class="galery__container">
+          <div class="galery__content">
+            <div class="galery__left">
+              <img src="../secondPage/imgs/tur1.svg" alt="img" />
+              <div class="galery__left-bot">
+                <img src="../secondPage/imgs/tur5.svg" alt="img" />
+                <div class="galery__left-bot-right">
+                  <img src="../secondPage/imgs/tur6.svg" alt="img" />
+                  <img src="../secondPage/imgs/tur7.svg" alt="img" />
+                </div>
+              </div>
+            </div>
+            <div class="galery__right">
+              <img src="../secondPage/imgs/tur2.svg" alt="img"  class="galery__img"/>
+              <div class="galery__right-up">
+                <div class="galery__right-bot">
+                  <img src="../secondPage/imgs/tur3.svg" alt="img" class="galery__img" />
+                  <img src="../secondPage/imgs/tur4.svg" alt="img" class="galery__img" />
+                </div>
+                <img src="../secondPage/imgs/tur8.svg" alt="img" class="galery__image" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="feedBack">
+        <div class="container">
+            <div class="sectionInfo">
+              <h3>Отзывы</h3>
+              <a href="#">Смотреть все</a>
+            </div>
+            <div class="feedSlide">
+                <div class="swiper myFeedSwiper">
+                  <div class="feedWraper swiper-wrapper">
+                    <div class="feedB swiper-slide">
+                      <img src="../secondPage/imgs/ivan.png" alt="#">
+                      <div class="ivan">
+                      <h6>Иван Иванов, 25 лет</h6>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                      aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    </div>
+                  </div>
+                  <div class="feedB swiper-slide">
+                      <img src="../secondPage/imgs/ivan2.png" alt="#">
+                      <div class="ivan">
+                      <h6>Иван Иванов, 25 лет</h6>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis
+                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      </p>
+                      </div>
+                    </div>
+                    <div class="feedB swiper-slide">
+                      <img src="../secondPage/imgs/ivan.png" alt="#">
+                      <div class="ivan">
+                        <h6>Иван Иванов, 25 лет</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                          magna
+                          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                          consequat.
+                          Duis
+                          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+  </section>
+      <section class="booking">
+        <div class="container">
+          <div class="booking__tur">
+            <img src="../secondPage/imgs/ozero.png" alt="Пейзаж" class="booking__img" />
+            <div class="booking__form-wrapper">
+              <form class="booking__form">
+                <p class="booking__title">Забронировать тур</p>
+                <label class="booking__input-wrapper">
+                  <input
+                    placeholder="10 ноября 2021"
+                    type="text"
+                    class="booking__input"
+                  />
+                  <img
+                    src="./imgs/kalendar.svg"
+                    alt="kalendar"
+                    class="booking__input-icon"
+                  />
+                </label>
+                <label class="booking__input-wrapper">
+                  <input
+                    placeholder="5 взрослых"
+                    type="text"
+                    class="booking__input"
+                  />
+                  <img
+                    src="./imgs/mans.svg"
+                    alt="people"
+                    class="booking__input-icon"
+                  />
+                </label>
+                <label class="booking__input-wrapper">
+                  <input
+                    placeholder="Количество детей"
+                    type="text"
+                    class="booking__input"
+                  />
+                  <img
+                    src="./imgs/mans.svg"
+                    alt="childs"
+                    class="booking__input-icon"
+                  />
+                </label>
+                <div class="booking__like">
+                  <button class="booking__btn">Забронировать</button>
+                  <img src="../secondPage/imgs/alllike.svg" alt="Избранное" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__left">
+            <img src="../secondPage/imgs/shar_logo.svg" alt="logo" />
+            <nav class="footer__nav">
+              <a href="#" class="footer__link">Главная</a>
+              <a href="#" class="footer__link">Экскурсии</a>
+              <a href="#" class="footer__link">Личный кабинет</a>
+            </nav>
+          </div>
+
+          <div class="footer__right">
+            <nav class="footer__nav">
+              <a
+                href="https://www.whatsapp.com/?lang=ru_RU"
+                class="footer__link"
+              >
+                <img src="../secondPage/imgs/whatsapp.svg" alt="Whatsapp" />
+                +7 964 944 18 74
+              </a>
+              <a href="https://getcontact.com/ru/" class="footer__link">
+                <img src="../secondPage/imgs/tg.svg" alt="Telegram" />
+                +7 918 919 98 28
+              </a>
+              <a href="https://web.telegram.org/k/" class="footer__link">
+                <img src="../secondPage/imgs/tg.svg" alt="Telegram" />
+                Телеграм-бот PeroTravel
+              </a>
+            </nav>
+            <div class="footer__line"></div>
+            <div class="footer__web">
+              <a href="https://mail.ru/" class="footer__link">
+                <img src="../secondPage/imgs/mail.svg" alt="mail" />
+                office@perotravel.ru
+              </a>
+              <nav class="footer__web-nav">
+                <a href="https://vk.com/">
+                  <img src="../secondPage/imgs/vk.svg" alt="vk" />
+                </a>
+                <a href="https://www.instagram.com/">
+                  <img src="../secondPage/imgs/insta.svg" alt="instagram" />
+                </a>
+                <a href="https://www.facebook.com/?locale=ru_RU">
+                  <img src="../secondPage/imgs/fb.svg" alt="facebook" />
+                </a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/popup.js"></script>
+    <script src="./js/burger.js"></script>
+  </body>
+</html>
